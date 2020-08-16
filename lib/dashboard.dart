@@ -12,7 +12,7 @@ class Dashboard extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/background.jpg'),
+              image: AssetImage('assets/images/bg.jpg'),
               fit: BoxFit.cover,
             ),
           ),
@@ -50,7 +50,7 @@ class Dashboard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     _buildCard(
-                        MaterialCommunityIcons.calendar_month, 'Calender'),
+                        MaterialCommunityIcons.calendar_month, 'Schedule'),
                     _buildChatbot(),
                   ],
                 ),
@@ -61,9 +61,9 @@ class Dashboard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     _buildCard(
-                        MaterialIcons.notifications_active, 'Notification'),
+                        MaterialIcons.notifications_active, 'Notifications'),
                     _buildCard(
-                        MaterialCommunityIcons.settings_outline, 'Setting'),
+                        MaterialCommunityIcons.settings_outline, 'Settings'),
                   ],
                 ),
               ),
